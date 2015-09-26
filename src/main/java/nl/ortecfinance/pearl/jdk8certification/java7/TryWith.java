@@ -14,7 +14,7 @@ public class TryWith {
         URL url = new URL("http://www.nu.nl");
 
         try (OutputStream out = new FileOutputStream("myfile.html");
-                InputStream is = url.openStream()) {
+                InputStream is = url.openStream();) {
             byte[] buf = new byte[4096];
             int len;
             while ((len = is.read(buf)) > 0) {
