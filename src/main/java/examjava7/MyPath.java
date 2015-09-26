@@ -1,4 +1,4 @@
-package nl.ortecfinance.pearl.jdk8certification.java7;
+package examjava7;
 
 import java.io.IOException;
 import java.nio.file.Path;
