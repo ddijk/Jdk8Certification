@@ -20,7 +20,7 @@ public class LambdaInstanceMethod {
         });
         t1.start();
 
-        Person p1 = new Person();
+        Person p1 = new Person("a",1);
         Thread t2 = new Thread(p1::print);
         t2.start();
 
