@@ -3,9 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package examjava8.warburton;
-
-import com.insightfullogic.java8.examples.chapter1.Artist;
+package examjava8;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -21,7 +19,7 @@ public class Warburton {
     }
 
     List<String> mapArtists(Stream<Artist> artists) {
-        return artists.map(a -> a.getName() + ", " + a.getNationality()).collect(Collectors.toList());
+        return artists.map(a -> a.getNaam()+ ", " + a.getPlaceOfOrigin()).collect(Collectors.toList());
     }
 
 }

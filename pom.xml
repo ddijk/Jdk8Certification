@@ -19,11 +19,6 @@
             <scope>test</scope>
         </dependency>
    
-        <dependency>
-            <groupId>com.insightfullogic</groupId>
-            <artifactId>lambdas-book-examples</artifactId>
-   
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+       
     </dependencies>
 </project>

@@ -23,7 +23,6 @@ public class JoinTest {
            String expected2 = "aapnootmies";
         
            
-           IntStream is = IntStream.range(0, 3).p
         
         
         Assert.assertEquals(expected, Stream.of("aap", "noot", "mies").collect(Collectors.joining(", ")));
