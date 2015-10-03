@@ -58,9 +58,15 @@ public class Reduce {
 class Artist {
 
     private String naam;
+    private String placeOfOrigin;
 
     public Artist(String naam) {
         this.naam = naam;
+    }
+
+    public Artist(String naam, String placeOfOrigin) {
+        this.naam = naam;
+        this.placeOfOrigin = placeOfOrigin;
     }
 
     public void setNaam(String naam) {
@@ -69,6 +75,10 @@ class Artist {
 
     public String getNaam() {
         return naam;
+    }
+
+    public String getPlaceOfOrigin() {
+        return placeOfOrigin;
     }
 
 }

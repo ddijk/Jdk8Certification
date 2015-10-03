@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package examjava8;
+package examjava8.warburton;
 
+import examjava8.MyIntStream;
 import java.util.Arrays;
 import java.util.List;
 import org.junit.After;
