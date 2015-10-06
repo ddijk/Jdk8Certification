@@ -36,6 +36,7 @@ public class FibonacciTest {
         int[] expResult = new int[]{0,1};
         int[] result = instance.solve(n, Fibonacci.start);
         assertArrayEquals(expResult, result);
+        assertArrayEquals(expResult, instance.solve2(n));
         
     }
     
@@ -48,11 +49,12 @@ public class FibonacciTest {
         int[] expResult = new int[]{0,1,1};
         int[] result = instance.solve(n, Fibonacci.start);
         assertArrayEquals(expResult, result);
+        assertArrayEquals(expResult, instance.solve2(n));
         
     }
     
       @Test
-    public void testSolve4() {
+    public void testSolve8() {
         System.out.println("solve");
         int n = 8;
       
@@ -60,6 +62,6 @@ public class FibonacciTest {
         int[] expResult = new int[]{0,1,1,2,3,5,8,13};
         int[] result = instance.solve(n, Fibonacci.start);
         assertArrayEquals(expResult, result);
-        
+          assertArrayEquals(expResult, instance.solve2(n));
     }
 }
