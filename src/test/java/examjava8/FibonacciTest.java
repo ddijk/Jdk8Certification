@@ -11,8 +11,8 @@ public class FibonacciTest {
 
     @Test
     public void testFibo() {
-        List<Integer> expected = Arrays.asList(2, 4, 6, 8);
-        List<Integer> actual = IntStream.iterate(0, n -> n + 2).limit(4).boxed().collect(toList());//forEach(System.out::println);
+        List<Integer> expected = Arrays.asList(0, 2, 4, 6, 8);
+        List<Integer> actual = IntStream.iterate(0, n -> n + 2).limit(5).boxed().collect(toList());//forEach(System.out::println);
 
         Assert.assertEquals(expected, actual);
     }
