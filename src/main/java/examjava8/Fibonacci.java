@@ -47,8 +47,9 @@ public class Fibonacci {
         List<Integer> initial = new ArrayList<>();
         initial.add(0);
         initial.add(1);
-      return Stream.iterate(0, i->i+1).limit(num).reduce(initial, (acc, i)->{int n =acc.get(acc.size()-1)+acc.get(acc.size()-2);acc.add(n); return acc;}, (i,j)-> { i.addAll(j); return i;});
-        
+      //return Stream.iterate(0, i->i+1).limit(num).reduce(initial, (acc, i)->{int n =acc.get(acc.size()-1)+acc.get(acc.size()-2);acc.add(n); return acc;}, (i,j)-> { i.addAll(j); return i;});
+        //return Stream.iterate(0,i->i).limit(num).reduce(initial, (acc, i)->{int n =acc.get(acc.size()-1)+acc.get(acc.size()-2);acc.add(n); return acc;}, (i,j)-> { i.addAll(j); return i;});
+        return IntStream.range(0, num).mapToObj(i->i).reduce(initial, (acc, i)->{int n =acc.get(acc.size()-1)+acc.get(acc.size()-2);acc.add(n); return acc;}, (i,j)-> { i.addAll(j); return i;});
     //  return result.stream().mapToInt(i->i).sum();
     }
     
