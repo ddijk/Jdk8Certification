@@ -47,8 +47,9 @@ public class Find {
         @Override
         public FileVisitResult visitFile(Path file,
                 BasicFileAttributes attrs) {
+            System.out.println("dickfile:" + file);
             find(file);
-            return CONTINUE;
+            return SKIP_SIBLINGS;
         }
 
         // Invoke the pattern matching
@@ -56,6 +57,7 @@ public class Find {
         @Override
         public FileVisitResult preVisitDirectory(Path dir,
                 BasicFileAttributes attrs) {
+            System.out.println("dickdir" + dir);
             find(dir);
             return CONTINUE;
         }

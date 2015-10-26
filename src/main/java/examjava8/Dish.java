@@ -22,6 +22,11 @@ public class Dish {
 
     public DishType getType() {
         return type;
+
+    }
+
+    public void setCalories(int calories) {
+        this.calories = calories;
     }
 
     @Override
